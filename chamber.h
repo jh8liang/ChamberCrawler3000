@@ -20,8 +20,6 @@ public:
     ~Chamber();
     void addCharacter(char c);
     void replace(Cell &c);
-
-
 };
 
 

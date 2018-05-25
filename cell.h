@@ -9,9 +9,6 @@
 #include <memory>
 #include "subject.h"
 #include "observer.h"
-//#include "character.h"
-//#include "item.h"
-//#include "chamber.h"
 using namespace std;
 class Item;
 class Character;

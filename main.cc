@@ -38,6 +38,7 @@
 
 int main (int argc, char *argv [])
 {
+    // initialize character
     bool merchantHostile = false;
     int level = 0;
     int bausage = 0;
@@ -67,12 +68,12 @@ int main (int argc, char *argv [])
 
 //Floor f (1,false);
     }
-
+    //read floor map file
     ifstream file {fname};
 
     while (true)
     {
-        if (level == 5)
+        if (level == 5) // winning condition
         {
             string s1;
             int g = p1->getGold();
@@ -123,16 +124,12 @@ int main (int argc, char *argv [])
         Floor f (level,false);
         if (num == 0)
         {
-            // call randomly generate map (spawn)
-            // spawn(f.theChamber, arr1);
             f.print ();
         }
         else
         {
             string c;
             int row = 0;
-            //int count = 0+level*25;
-// int column = 0;
             while (count < (25+(level*25)))
             {
                 getline(file, c);
@@ -1493,5 +1490,3 @@ int main (int argc, char *argv [])
         arr2.clear();
     }
 }
-
-
